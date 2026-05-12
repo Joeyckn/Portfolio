@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio BTS SIO SLAM</title>
+  <link rel="stylesheet" href="Portfolio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <span class="logo">// PORTFOLIO</span>
+    <div class="nav-liens">
+      <a onclick="afficherSection('accueil')" id="nav-accueil" class="actif">Accueil</a>
+      <a onclick="afficherSection('apropos')" id="nav-apropos">À propos</a>
+      <a onclick="afficherSection('competences')" id="nav-competences">Compétences</a>
+      <a onclick="afficherSection('projets')" id="nav-projets">Projets</a>
+      <a onclick="afficherSection('stage')" id="nav-stage">Stage</a>
+      <a onclick="afficherSection('veille')" id="nav-veille">Veille</a>
+      <a onclick="afficherSection('contact')" id="nav-contact">Contact</a>
+    </div>
+  </nav>
+  <section id="accueil" class="actif">
+    <div class="hero">
+      <div class="hero-fond"></div>
+      <div class="hero-grille"></div>
+      <div class="hero-contenu">
+        <div class="badge">BTS SIO — SLAM</div>
+        <h1>Développeur<br><em>web & logiciel</em><br>en formation</h1>
+        <p class="hero-description">Étudiant en BTS SIO option SLAM.</p>
+        <div class="hero-boutons">
+          <button class="btn btn-primaire" onclick="afficherSection('projets')">Voir mes projets</button>
+          <button class="btn btn-secondaire" onclick="afficherSection('stage')">Journal de stage</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="apropos">
+    <div class="page">
+      <p class="etiquette-section">01 — À PROPOS</p>
+      <div class="grille-apropos">
+        <div class="texte-apropos">
+          <p>Je suis en première année de BTS SIO option SLAM.</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-valeur">BTS SIO</span>
+            <span class="stat-label">OPTION SLAM • 1ÈRE ANNÉE</span>
+          </div>
+          <div class="stat">
+            <span class="stat-valeur">PHP / Java</span>
+            <span class="stat-label">LANGAGES PRINCIPAUX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="competences">
+    <div class="page">
+      <p class="etiquette-section">02 — COMPÉTENCES</p>
+      <div class="grille-competences">
+        <div class="carte-competence">
+          <p class="carte-index">[01] BACK-END</p>
+          <h3>Développement serveur</h3>
+          <p class="carte-description">Conception d'applications web côté serveur, gestion des sessions, accès BDD avec PDO.</p>
+          <div class="liste-tags">
+            <span class="tag accent">PHP</span>
+            <span class="tag accent">MySQL</span>
+            <span class="tag">PDO</span>
+            <span class="tag">Sessions</span>
+          </div>
+        </div>
+        <div class="carte-competence">
+          <p class="carte-index">[02] FRONT-END</p>
+          <h3>Interfaces & interactions</h3>
+          <p class="carte-description">Intégration HTML/CSS, JavaScript.</p>
+          <div class="liste-tags">
+            <span class="tag accent">JavaScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+          </div>
+        </div>
+        <div class="carte-competence">
+          <p class="carte-index">[03] LOGICIEL</p>
+          <h3>Programmation orientée objet</h3>
+          <p class="carte-description">Java POO.</p>
+          <div class="liste-tags">
+            <span class="tag accent">Java</span>
+            <span class="tag">POO</span>
+          </div>
+        </div>
+        <div class="carte-competence">
+          <p class="carte-index">[04] OUTILS</p>
+          <h3>Environnement de travail</h3>
+          <p class="carte-description">Outils du développeur quotidien.</p>
+          <div class="liste-tags">
+            <span class="tag">Git</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Apache</span>
+          </div>
+        </div>
+        <div class="carte-competence">
+          <p class="carte-index">[05] BASE DE DONNÉES</p>
+          <h3>Modélisation & requêtes</h3>
+          <p class="carte-description">Schémas relationnels, SQL.</p>
+          <div class="liste-tags">
+            <span class="tag accent">MySQL</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projets">
+    <div class="page">
+      <p class="etiquette-section">03 — PROJETS</p>
+      <div class="liste-projets">
+        <div class="carte-projet">
+          <div class="projet-info">
+            <p class="projet-numero">001</p>
+            <h3>Plateforme de streaming Netflix-like</h3>
+            <p class="projet-description">
+              Application web complète : authentification, sessions sécurisées,
+              carrousel JS, recherche AJAX en temps réel.
+            </p>
+            <div class="liste-tags" style="margin-top: 1.25rem">
+              <span class="tag accent">PHP</span>
+              <span class="tag accent">MySQL</span>
+              <span class="tag accent">AJAX</span>
+              <span class="tag">PDO</span>
+              <span class="tag">JS</span>
+            </div>
+          </div>
+          <div class="projet-meta">
+            <span class="statut statut-en-cours">EN COURS</span>
+          </div>
+        </div>
+        <div class="carte-projet">
+          <div class="projet-info">
+            <p class="projet-numero">002</p>
+            <h3>Jeu Pokémon en Java</h3>
+            <p class="projet-description">Combat au tour par tour en Java. POO.</p>
+            <div class="liste-tags" style="margin-top: 1.25rem">
+              <span class="tag accent">Java</span>
+              <span class="tag">POO</span>
+              <span class="tag">Héritage</span>
+            </div>
+          </div>
+          <div class="projet-meta">
+            <span class="statut statut-en-cours">EN COURS</span>
+          </div>
+        </div>
+        <div class="carte-projet">
+          <div class="projet-info">
+            <p class="projet-numero">003</p>
+            <h3>Challenges Root-Me PRO</h3>
+            <p class="projet-description">
+              Parcours complet de 13 modules couvrant HTTP, Web, Réseau, JavaScript, SQL, TCP, Linux, Python, logs et cybersécurité. Challenges pratiques sur l'analyse de protocoles, l'injection SQL, la cryptanalyse, l'obfuscation JS et la forensique réseau (Wireshark, PCAP).
+            </p>
+            <div class="liste-tags" style="margin-top: 1.25rem">
+              <span class="tag accent">HTTP</span>
+              <span class="tag accent">SQL</span>
+              <span class="tag accent">Linux</span>
+              <span class="tag accent">Python</span>
+              <span class="tag">Wireshark</span>
+              <span class="tag">TCP</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Cryptanalyse</span>
+              <span class="tag">PCAP</span>
+              <span class="tag">Forensique</span>
+            </div>
+          </div>
+          <div class="projet-meta">
+            <span class="statut statut-termine">COMPLÉTÉ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="stage">
+    <div class="page">
+      <p class="etiquette-section">04 — STAGE</p>
+      <div class="stage-entete">
+        </div>
+       <div class="info-entreprise" id="info-entreprise"></div>
+       <div class="onglets-semaines" id="onglets-semaines"></div>
+       <div id="panneaux-semaines"></div>
+    </div>
+  </section>
+   <section id="veille">
+    <div class="page">
+      <p class="etiquette-section">05 — VEILLE TECHNOLOGIQUE</p>
+      <div class="veille-entete">
+        <h2>IA locales vs<br><em>IA en ligne</em></h2>
+        <p>Suivi des évolutions autour des modèles d'intelligence artificielle utilisables en local, leurs enjeux de confidentialité et leurs alternatives aux solutions cloud.</p>
+      </div>
+      <div class="liste-veille">
+        <div class="carte-veille">
+          <div class="veille-meta">
+            <span class="veille-categorie">MODÈLES</span>
+          </div>
+          <h3>Ollama — faire tourner des LLM en local</h3>
+          <p class="veille-texte">Ollama permet de télécharger et exécuter des modèles de langage (LLaMA 3, Mistral, Gemma…) directement sur sa machine, sans connexion internet. Les données ne quittent jamais l'appareil.</p>
+          <div class="liste-tags" style="margin-top: 1rem">
+            <span class="tag accent">Ollama</span>
+            <span class="tag">LLaMA 3</span>
+            <span class="tag">Mistral</span>
+            <span class="tag">Gemma</span>
+            <span class="tag">Local</span>
+          </div>
+        </div>
+        <div class="carte-veille">
+          <div class="veille-meta">
+            <span class="veille-categorie">CONFIDENTIALITÉ</span>
+          </div>
+          <h3>Pourquoi éviter les IA en ligne pour des données sensibles</h3>
+          <p class="veille-texte">Les IA cloud (ChatGPT, Gemini, Claude…) envoient les prompts à des serveurs distants. Ces données peuvent être utilisées pour l'entraînement ou exposées en cas de fuite. Une IA locale élimine ce risque.</p>
+          <div class="liste-tags" style="margin-top: 1rem">
+            <span class="tag accent">RGPD</span>
+            <span class="tag">Confidentialité</span>
+            <span class="tag">Données personnelles</span>
+          </div>
+        </div>
+        <div class="carte-veille">
+          <div class="veille-meta">
+            <span class="veille-categorie">OUTILS</span>
+          </div>
+          <h3>Open WebUI — interface locale pour LLM</h3>
+          <p class="veille-texte">Open WebUI est une interface web auto-hébergée compatible avec Ollama. Elle reproduit l'expérience d'un ChatGPT mais en 100% local, avec gestion des conversations, des modèles et des plugins.</p>
+          <div class="liste-tags" style="margin-top: 1rem">
+            <span class="tag accent">Open WebUI</span>
+            <span class="tag">Auto-hébergé</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+        <div class="carte-veille">
+          <div class="veille-meta">
+            <span class="veille-categorie">COMPARATIF</span>
+          </div>
+          <h3>IA locale vs IA cloud — avantages et limites</h3>
+          <p class="veille-texte">L'IA locale offre confidentialité totale, fonctionnement hors ligne et gratuité après installation. En contrepartie, elle nécessite du matériel puissant (GPU recommandé) et les modèles restent moins capables que les versions cloud haut de gamme.</p>
+          <div class="liste-tags" style="margin-top: 1rem">
+            <span class="tag">GPU</span>
+            <span class="tag">Performance</span>
+            <span class="tag">Coût</span>
+            <span class="tag accent">Vie privée</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="page">
+      <p class="etiquette-section">06 — CONTACT</p>
+      <div class="contenu-contact">
+        <h2>Prenons<br><em>contact</em></h2>
+        <p>Disponible pour des alternances, stages, ou simplement pour échanger sur un projet.</p>
+        <div class="liens-contact">
+          <a href="mailto:votre@email.com" class="lien-contact">✉ Email</a>
+          <a href="https://github.com/" class="lien-contact">↗ GitHub</a>
+          <a href="https://linkedin.com/" class="lien-contact">↗ LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="Portfolio.js"></script>
+</body>
+</html>
