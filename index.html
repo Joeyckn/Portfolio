@@ -132,7 +132,7 @@
             </div>
           </div>
           <div class="projet-meta">
-            <span class="statut statut-en-cours">EN COURS</span>
+            <span class="statut statut-termine">TERMINÉ</span>
           </div>
         </div>
         <div class="carte-projet">
@@ -147,7 +147,7 @@
             </div>
           </div>
           <div class="projet-meta">
-            <span class="statut statut-en-cours">EN COURS</span>
+            <span class="statut statut-termine">TERMINÉ</span>
           </div>
         </div>
         <div class="carte-projet">
@@ -191,59 +191,77 @@
     <div class="page">
       <p class="etiquette-section">05 — VEILLE TECHNOLOGIQUE</p>
       <div class="veille-entete">
-        <h2>IA locales vs<br><em>IA en ligne</em></h2>
-        <p>Suivi des évolutions autour des modèles d'intelligence artificielle utilisables en local, leurs enjeux de confidentialité et leurs alternatives aux solutions cloud.</p>
+        <h2>Veille —<br><em>IA locales</em></h2>
+        <p>Suivi des évolutions autour des modèles d'intelligence artificielle exécutables directement sur sa machine, sans dépendance à un service cloud.</p>
       </div>
       <div class="liste-veille">
         <div class="carte-veille">
           <div class="veille-meta">
-            <span class="veille-categorie">MODÈLES</span>
+            <span class="veille-categorie">OUTIL</span>
           </div>
-          <h3>Ollama — faire tourner des LLM en local</h3>
-          <p class="veille-texte">Ollama permet de télécharger et exécuter des modèles de langage (LLaMA 3, Mistral, Gemma…) directement sur sa machine, sans connexion internet. Les données ne quittent jamais l'appareil.</p>
+          <h3>Ollama</h3>
+          <p class="veille-texte">Ollama est un outil qui permet de télécharger et d'exécuter des modèles de langage (LLaMA 3, Mistral, Gemma, Phi…) en local via une simple commande. Il expose une API REST utilisable depuis n'importe quelle application.</p>
           <div class="liste-tags" style="margin-top: 1rem">
             <span class="tag accent">Ollama</span>
             <span class="tag">LLaMA 3</span>
             <span class="tag">Mistral</span>
             <span class="tag">Gemma</span>
-            <span class="tag">Local</span>
+            <span class="tag">Phi</span>
+            <span class="tag">API REST</span>
+          </div>
+        </div>
+        <div class="carte-veille">
+          <div class="veille-meta">
+            <span class="veille-categorie">INTERFACE</span>
+          </div>
+          <h3>Open WebUI</h3>
+          <p class="veille-texte">Open WebUI est une interface web auto-hébergée compatible avec Ollama. Elle offre une expérience similaire à ChatGPT — gestion des conversations, sélection du modèle, plugins — entièrement en local.</p>
+          <div class="liste-tags" style="margin-top: 1rem">
+            <span class="tag accent">Open WebUI</span>
+            <span class="tag">Auto-hébergé</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Ollama</span>
+          </div>
+        </div>
+        <div class="carte-veille">
+          <div class="veille-meta">
+            <span class="veille-categorie">MODÈLES</span>
+          </div>
+          <h3>LLaMA 3, Mistral, Gemma</h3>
+          <p class="veille-texte">Ces modèles open source sont les plus utilisés en local. LLaMA 3 (Meta) et Mistral (français) offrent de bonnes performances sur du matériel standard. Gemma (Google) est plus léger et tourne sur des machines modestes.</p>
+          <div class="liste-tags" style="margin-top: 1rem">
+            <span class="tag accent">LLaMA 3</span>
+            <span class="tag accent">Mistral</span>
+            <span class="tag accent">Gemma</span>
+            <span class="tag">Open source</span>
+            <span class="tag">Meta</span>
+          </div>
+        </div>
+        <div class="carte-veille">
+          <div class="veille-meta">
+            <span class="veille-categorie">INTERFACE</span>
+          </div>
+          <h3>LM Studio</h3>
+          <p class="veille-texte">LM Studio est une application desktop (Windows, Mac, Linux) pour télécharger et faire tourner des LLM en local. Interface graphique complète, pas de ligne de commande nécessaire. Expose aussi une API locale compatible OpenAI.</p>
+          <div class="liste-tags" style="margin-top: 1rem">
+            <span class="tag accent">LM Studio</span>
+            <span class="tag">Desktop</span>
+            <span class="tag">Windows</span>
+            <span class="tag">Mac</span>
+            <span class="tag">API OpenAI</span>
           </div>
         </div>
         <div class="carte-veille">
           <div class="veille-meta">
             <span class="veille-categorie">CONFIDENTIALITÉ</span>
           </div>
-          <h3>Pourquoi éviter les IA en ligne pour des données sensibles</h3>
-          <p class="veille-texte">Les IA cloud (ChatGPT, Gemini, Claude…) envoient les prompts à des serveurs distants. Ces données peuvent être utilisées pour l'entraînement ou exposées en cas de fuite. Une IA locale élimine ce risque.</p>
+          <h3>Données et vie privée</h3>
+          <p class="veille-texte">Avec une IA locale, aucune donnée ne quitte la machine. Les prompts, les réponses et les documents traités restent en local, ce qui est essentiel pour des usages professionnels ou des données sensibles soumises au RGPD.</p>
           <div class="liste-tags" style="margin-top: 1rem">
             <span class="tag accent">RGPD</span>
-            <span class="tag">Confidentialité</span>
-            <span class="tag">Données personnelles</span>
-          </div>
-        </div>
-        <div class="carte-veille">
-          <div class="veille-meta">
-            <span class="veille-categorie">OUTILS</span>
-          </div>
-          <h3>Open WebUI — interface locale pour LLM</h3>
-          <p class="veille-texte">Open WebUI est une interface web auto-hébergée compatible avec Ollama. Elle reproduit l'expérience d'un ChatGPT mais en 100% local, avec gestion des conversations, des modèles et des plugins.</p>
-          <div class="liste-tags" style="margin-top: 1rem">
-            <span class="tag accent">Open WebUI</span>
-            <span class="tag">Auto-hébergé</span>
-            <span class="tag">Docker</span>
-          </div>
-        </div>
-        <div class="carte-veille">
-          <div class="veille-meta">
-            <span class="veille-categorie">COMPARATIF</span>
-          </div>
-          <h3>IA locale vs IA cloud — avantages et limites</h3>
-          <p class="veille-texte">L'IA locale offre confidentialité totale, fonctionnement hors ligne et gratuité après installation. En contrepartie, elle nécessite du matériel puissant (GPU recommandé) et les modèles restent moins capables que les versions cloud haut de gamme.</p>
-          <div class="liste-tags" style="margin-top: 1rem">
-            <span class="tag">GPU</span>
-            <span class="tag">Performance</span>
-            <span class="tag">Coût</span>
-            <span class="tag accent">Vie privée</span>
+            <span class="tag">Vie privée</span>
+            <span class="tag">Hors ligne</span>
+            <span class="tag">Données sensibles</span>
           </div>
         </div>
       </div>
