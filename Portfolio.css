@@ -13,8 +13,22 @@
   --couleur-bordure-2:   rgba(255, 255, 255, 0.15);
   --couleur-accent:      #c8f135;
   --couleur-accent-2:    #3df5c1;
+  --couleur-nav:         rgba(13, 13, 13, 0.95);
   --police-mono: 'Space Mono', monospace;
   --police-sans: 'DM Sans', sans-serif;
+}
+
+:root.clair {
+  --couleur-fond:        #f8f8f5;
+  --couleur-fond-2:      #f0efe9;
+  --couleur-fond-3:      #e8e7e0;
+  --couleur-texte:       #1a1a1a;
+  --couleur-muted:       #666;
+  --couleur-bordure:     rgba(0, 0, 0, 0.08);
+  --couleur-bordure-2:   rgba(0, 0, 0, 0.18);
+  --couleur-accent:      #5a7a00;
+  --couleur-accent-2:    #007a5a;
+  --couleur-nav:         rgba(248, 248, 245, 0.95);
 }
 html {
   scroll-behavior: smooth;
@@ -33,7 +47,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2.5rem;
-  background: rgba(13, 13, 13, 0.95);
+  background: var(--couleur-nav);
   border-bottom: 1px solid var(--couleur-bordure);
   backdrop-filter: blur(10px);
 }
@@ -598,4 +612,22 @@ section.actif {
   .grille-apropos { grid-template-columns: 1fr; gap: 2.5rem; }
   .carte-projet { grid-template-columns: 1fr; }
   .grille-deux-colonnes { grid-template-columns: 1fr; }
+}
+
+.btn-theme {
+  font-family: var(--police-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  padding: 6px 12px;
+  border: 1px solid var(--couleur-bordure-2);
+  background: transparent;
+  color: var(--couleur-muted);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s;
+  margin-left: 1rem;
+}
+.btn-theme:hover {
+  color: var(--couleur-texte);
+  border-color: var(--couleur-texte);
 }

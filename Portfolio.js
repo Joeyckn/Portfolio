@@ -6,16 +6,16 @@ function afficherSection(idSection) {
 }
 const INFO_STAGE = {
   entreprise: "CTI Saint-Étienne",
-  service:    " ",
-  tuteur:     " ",
-  debut:      "18 avril 2026",
+  service:    "RPP - Recette prepoduction",
+  tuteur:     "Nicolas Gaillard",
+  debut:      "18 mai 2026",
   fin:        "03 juillet 2026"
 };
 const SEMAINES = [
   {
     numero:         1,
-    dates:          "",
-    activites:      "",  
+    dates:          "18-22 mai 2026",
+    activites:      "- Découverte de l'entreprise; prise en main des logiciels et environnements; participation à des réunions;\n- Observation des processus de travail et des projets en cours; création d'un script shell pour automatiser des tâches.",  
     outils:         "",
     competences:    [],   
     difficultes:    "",
@@ -188,3 +188,16 @@ function changerSemaine(num) {
   document.getElementById('panneau-' + num).classList.add('actif');
 }
 construireStage();
+
+function basculerTheme() {
+  const estClair = document.documentElement.classList.toggle('clair');
+  const btn = document.getElementById('btn-theme');
+  btn.textContent = estClair ? '☾ Sombre' : '☀ Clair';
+  localStorage.setItem('theme', estClair ? 'clair' : 'sombre');
+}
+
+const themeSauvegarde = localStorage.getItem('theme');
+if (themeSauvegarde === 'clair') {
+  document.documentElement.classList.add('clair');
+  document.getElementById('btn-theme').textContent = '☾ Sombre';
+}
