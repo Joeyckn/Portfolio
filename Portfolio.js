@@ -23,8 +23,8 @@ const SEMAINES = [
   },
   {
     numero:         2,
-    dates:          "",
-    activites:      "",
+    dates:          "25-29 mai 2026",
+    activites:      "- Finalisation du script",
     outils:         "",
     competences:    [],
     difficultes:    "",
