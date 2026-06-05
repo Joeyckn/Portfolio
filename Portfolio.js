@@ -15,7 +15,7 @@ const SEMAINES = [
   {
     numero:         1,
     dates:          "18-22 mai 2026",
-    activites:      "- Découverte de l'entreprise; prise en main des logiciels et environnements; participation à des réunions;\n- Observation des processus de travail et des projets en cours; création d'un script shell pour automatiser des tâches.",  
+    activites:      "- Découverte de l'entreprise; prise en main des logiciels et environnements; participation à des réunions;\n- Observation des processus de travail et des projets en cours; création d'un script shell pour automatiser la cloture des progrès.",  
     outils:         "",
     competences:    [],   
     difficultes:    "",
@@ -32,8 +32,8 @@ const SEMAINES = [
   },
   {
     numero:         3,
-    dates:          "",
-    activites:      "",
+    dates:          "1-5 juin 2026",
+    activites:      "Création d'un script shell pour automatiser la génération du fichier de traitement  en récupérant et incrémentant la séquence du traitement précédent.  ",
     outils:         "",
     competences:    [],
     difficultes:    "",
