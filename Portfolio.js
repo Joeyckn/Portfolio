@@ -33,7 +33,7 @@ const SEMAINES = [
   {
     numero:         3,
     dates:          "1-5 juin 2026",
-    activites:      "Création d'un script shell pour automatiser la génération du fichier de traitement  en récupérant et incrémentant la séquence du traitement précédent.  ",
+    activites:      "Création d'un script shell pour automatiser la génération du fichier de traitement en récupérant et incrémentant la séquence du traitement précédent.  ",
     outils:         "",
     competences:    [],
     difficultes:    "",
@@ -41,8 +41,8 @@ const SEMAINES = [
   },
   {
     numero:         4,
-    dates:          "",
-    activites:      "",
+    dates:          "8-12 juin 2026",
+    activites:      "Rafraichissement de base de donnée, réunion, tarification",
     outils:         "",
     competences:    [],
     difficultes:    "",
@@ -50,8 +50,8 @@ const SEMAINES = [
   },
   {
     numero:         5,
-    dates:          "",
-    activites:      "",
+    dates:          "15-19 juin 2026",
+    activites:      "Test de requête sql + debug, tarification, debug script shell de génération du fichier de traitement, remise à niveau shell ",
     outils:         "",
     competences:    [],
     difficultes:    "",
