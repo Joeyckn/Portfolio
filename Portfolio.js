@@ -59,8 +59,8 @@ const SEMAINES = [
   },
   {
     numero:         6,
-    dates:          "",
-    activites:      "",
+    dates:          "22 - 26 juin 2026",
+    activites:      "Test correctif",
     outils:         "",
     competences:    [],
     difficultes:    "",
@@ -68,8 +68,8 @@ const SEMAINES = [
   },
   {
     numero:         7,
-    dates:          "",
-    activites:      "",
+    dates:          "29 juin 2026 - 03 juillet 2026",
+    activites:      "Test correctif",
     outils:         "",
     competences:    [],
     difficultes:    "",
